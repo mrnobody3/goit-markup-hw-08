@@ -1,0 +1,33 @@
+$primery-color: #757575;
+$secondary-title-color: #212121;
+$accent-main-color: #2196f3;
+$main-white-color: #ffffff;
+$main-bg-color: #2f303a;
+$item-bg-color: #f5f4fa;
+$icon-no-hover: #afb1b8;
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: $primery-color;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+

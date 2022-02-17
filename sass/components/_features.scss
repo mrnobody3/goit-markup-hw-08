@@ -1,0 +1,31 @@
+
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $item-bg-color;
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: inherit;
+    line-height: 1.14;
+    color: $secondary-title-color;
+    margin-bottom: 10px;
+  }
+}
+
+

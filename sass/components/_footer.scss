@@ -1,0 +1,87 @@
+.footer {
+  background-color: $main-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__logo {
+    margin-bottom: 20px;
+  }
+  &__conect {
+  margin-left: 70px;
+  }
+  &__follow {
+    margin-left: 93px;
+  }
+}
+
+.address {
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: $accent-main-color;
+    }
+  }
+  &--local {
+    color: $main-white-color;
+  }
+  &--contact {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+}
+
+
+.conect {
+  position: relative;
+  top: 12px;
+  &__title {
+    display: block;
+    text-transform: uppercase;
+    color: $main-white-color;
+    margin-bottom: 20px;
+    line-height: 1.17;
+  }
+  &__link {
+    fill: $main-white-color;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  &__link:hover, &__link:focus {
+    background: $accent-main-color;
+  }
+}
+
+
+
+.follow {
+  position: relative;
+  top: 12px;
+  display: block;
+  &__label {
+    position: relative;
+    display: flex;
+  }
+  &__icon-send {
+    margin-left: 10px;
+    fill: $main-white-color;
+    transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__input {
+    min-width: 358px;
+    padding: 15px 16px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+
+
+

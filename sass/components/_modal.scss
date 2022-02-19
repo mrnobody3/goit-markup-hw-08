@@ -1,26 +1,36 @@
-
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
+  width: 300px;
   min-height: 581px;
   background-color: $main-white-color;
-  padding: 40px 40px;
+  padding: 20px 20px;
+  @include mobile {
+    width: 450px;
+    padding: 40px 40px;
+  }
+  @include desk {
+    min-width: 528px;
+    min-height: 581px;
+  }
   &__title {
     display: block;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: $secondary-title-color;
     margin: 0 auto 12px;
+    @include desk {
+      line-height: 1.15;
+    }
   }
   &__btn--close {
     position: absolute;
     top: 8px;
     right: 8px;
-  
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +41,8 @@
     background-color: #fff;
     cursor: pointer;
     transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       fill: $accent-main-color;
     }
   }
@@ -41,8 +52,4 @@
     height: 50px;
     margin: 0 auto;
   }
-  
 }
-
-
-

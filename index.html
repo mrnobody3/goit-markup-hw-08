@@ -5,40 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!-- HEADER -->
 
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="container container--page-header">
         <a href="./index.html" class="logo">Web<span class="logo--header">Studio</span></a>
-        <nav class="nav page-header__nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link nav__link--current">Студия</a>
-            </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="contact">
-          <a href="mailto:info@devstudio.com" class="contact__link">
-            <svg class="contact__icon" width="16" height="12">
-              <use href="./images/symbol-defs.svg#envelope"></use></svg >info@devstudio.com
-          </a>
-          <a href="tel:+380961111111" class="contact__link">
-            <svg class="contact__icon" width="10" height="16">
-              <use href="./images/symbol-defs.svg#smartphone"></use></svg>+38 096 111 11 11
-          </a>
+
+        <button data-menu-button  aria-label="Переключатель мобильного меню" type="button" class="header__menu-button " aria-controls="menu" aria-expanded="false">
+          <svg width="40px" height="40px">
+            <use class="" href="./images/icons.svg#icon-close"></use>
+            <use class="" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div data-menu class="page-header__menu" id="menu ">
+          <nav class="nav page-header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link nav__link--current">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contact page-header__contact">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+            <a href="tel:+380961111111" class="contact__link">
+              <svg class="contact__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </div>
         </div>
+
+      
       </div>
-    </header>
+    </header> -->
 
     <!-- MAIN -->
 
@@ -46,7 +62,7 @@
       <!-- Hero -->
 
       <section class="hero">
-        <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="btn" data-modal-open>Заказать услугу</button>
       </section>
 
@@ -96,9 +112,7 @@
                 </svg>
               </div>
               <h3 class="features__subtitle">Современные технологии</h3>
-              <p>
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-              </p>
+              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
@@ -338,8 +352,8 @@
               <a class="clients__link" href="" aria-label="client3">
                 <svg width="44" height="42">
                   <use href="./images/symbol-defs.svg#client3"></use>
-                  </svg>
-                </a>
+                </svg>
+              </a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href="" aria-label="client4">
@@ -371,18 +385,24 @@
 
     <footer class="footer">
       <div class="container container--footer">
-        <div>
-          <a href="./index.html" class="logo footer__logo">Web<span class="logo--footer">Studio</span></a>
+        <div class="footer__address">
+          <a href="./index.html" class="logo footer__logo"
+            >Web<span class="logo--footer">Studio</span></a
+          >
           <address class="address">
             <ul class="address__list">
               <li class="address__item">
                 <a href="" class="address__link address--local">г. Киев, пр-т Леси Украинки, 26</a>
               </li>
               <li class="address__item">
-                <a href="mailto:info@example.com" class="address__link address--contact">info@example.com</a>
+                <a href="mailto:info@example.com" class="address__link address--contact"
+                  >info@example.com</a
+                >
               </li>
               <li class="address__item">
-                <a href="tel:+380991111111" class="address__link address--contact">+38 099 111 11 11</a>
+                <a href="tel:+380991111111" class="address__link address--contact"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -424,10 +444,9 @@
 
         <div class="follow footer__follow">
           <b class="conect__title">Подпишитесь на рассылку</b>
-          <form>
+          <form class="follow__form">
             <label class="follow__label" for="footer follow">
               <input class="follow__input" type="email" name="footer follow" placeholder="E-mail" />
-              <!-- <span class="follow-email">E-mail</span> -->
               <button class="btn btn--follow" type="submit" name="footer follow">
                 Подписаться<svg class="follow__icon-send" width="24" height="24">
                   <use href="./images/symbol-defs.svg#send"></use>
@@ -438,6 +457,7 @@
         </div>
       </div>
     </footer>
+
     <!--  MODALKA-->
 
     <div class="backdrop is-hidden" data-modal>
@@ -486,7 +506,11 @@
           </label>
           <label class="form__field form__field--text-area">
             <span class="form__subtitle">Коминтарий</span>
-            <textarea class="form__text-area" name="feedback" placeholder="Введите текст"></textarea>
+            <textarea
+              class="form__text-area"
+              name="feedback"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
           <label class="form__check-label">
             <input class="form__checkbox" type="checkbox" name="terms" value="agree" />
@@ -495,7 +519,9 @@
                 <use href="./images/symbol-defs.svg#check"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю &nbsp<a class="form__check-link" href="#"> Условия договора</a>
+            Соглашаюсь с рассылкой и принимаю<a class="form__check-link" href="#"
+              >Условия договора</a
+            >
           </label>
 
           <button class="btn modal__btn--sub" type="submit">Отправить</button>
@@ -504,5 +530,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

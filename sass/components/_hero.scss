@@ -7,16 +7,28 @@
   background-size: cover;
   text-align: center;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
   max-width: 1600px;
+  padding: 116px 0;
+  // height: 400px;
+  @include desk {
+    padding: 200px 0;
+  }
   &__title {
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.62;
+    width: 75%;
+    font-size: 26px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $main-white-color;
+    @include tab {
+      width: 50%;
+    }
+    @include desk {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
-  
 }

@@ -1,15 +1,27 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &__title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     color: $secondary-title-color;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include desk {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
   &--examples {
     padding-top: 0;
+    @include less-desk {
+      display: none;
+    }
   }
   &--team {
     background-color: $item-bg-color;
@@ -17,4 +29,3 @@
     line-height: 1.19;
   }
 }
-

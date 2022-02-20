@@ -36,6 +36,10 @@
       width: calc(100% / 2 - 30px);
       margin: 15px;
     }
+    @include desk {
+      width: calc(100% / 4 - 30px);
+      margin: 15px;
+    }
   }
 
   &__meta {

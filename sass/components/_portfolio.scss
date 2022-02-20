@@ -1,12 +1,13 @@
-
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
   &__link {
     text-decoration: none;
   }
-  
+
   &__subtitle {
     font-size: 18px;
     line-height: 2;
@@ -21,21 +22,29 @@
   }
 
   &__item {
-    // width: 370px;
-    width: calc(100% / 3 - 30px);
+    width: 100%;
     /* width: calc((100% - 90px) / 3); */
-    margin: 15px;
     border: 1px solid #eeeeee;
     transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus, &:hover {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 30px;
+    &:focus,
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-    
+    @include tab {
+      width: calc(100% / 2 - 30px);
+      margin: 15px;
+    }
+    @include desk {
+      width: calc(100% / 3 - 30px);
+      margin: 15px;
+    }
   }
 
   &__img {
     display: block;
-    max-width: 100%;
+    width: 100%;
   }
   &__content {
     padding: 20px 24px;
@@ -60,10 +69,9 @@
     padding: 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
     color: $main-white-color;
-    .portfolio__item:hover &, .portfolio__item:focus & {
+    .portfolio__item:hover &,
+    .portfolio__item:focus & {
       transform: translateY(0%);
     }
   }
-
 }
-

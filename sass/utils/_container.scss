@@ -12,10 +12,31 @@
     width: 1200px;
   }
 }
-
-.container--page-header {
-  display: flex;
-  align-items: center;
+.container--mobile {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  @include mobile {
+    width: 450px;
+  }
+  @include tab {
+    display: none;
+  }
+}
+.container--desktop {
+  display: none;
+  @include tab {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 768px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+  @include desk {
+    width: 1200px;
+  }
 }
 .container--footer {
   @include tab {

@@ -87,9 +87,10 @@
   }
   &__label {
     position: relative;
+    display: flex;
 
-    @include desk {
-      display: flex;
+    @include less-desk {
+      flex-direction: column;
     }
   }
   &__icon-send {

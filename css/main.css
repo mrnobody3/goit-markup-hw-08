@@ -599,13 +599,20 @@ p {
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
 .btn:hover, .btn:focus {
   color: #212121;
   background-color: #ffffff;
 }
 
 .btn--follow {
-  display: block;
+  display: inline-flex;
   margin: 0 auto;
   align-items: center;
   height: 50px;
@@ -1188,11 +1195,12 @@ p {
 
 .follow__label {
   position: relative;
+  display: flex;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .follow__label {
-    display: flex;
+    flex-direction: column;
   }
 }
 

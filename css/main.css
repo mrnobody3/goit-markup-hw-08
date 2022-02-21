@@ -248,7 +248,7 @@ p {
 }
 
 .mobile-header__contarine {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   transform: translateY(-100%);
@@ -292,7 +292,8 @@ p {
 }
 
 .mobile-header .mobile-header__menu.is-open .mobile-header__contarine .mobile-header__nav {
-  margin-bottom: 302px;
+  min-height: 600px;
+  height: 100vh;
 }
 
 .mobile-header .mobile-header__menu.is-open .mobile-header__contarine .mobile-header__link {
@@ -311,6 +312,11 @@ p {
 
 .mobile-header .mobile-header__menu.is-open .mobile-header__contarine .mobile-header__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile-header .mobile-header__menu.is-open .mobile-header__contarine .mobile-contact {
+  position: absolute;
+  bottom: 150px;
 }
 
 .mobile-header .mobile-header__menu.is-open .mobile-header__contarine .mobile-contact__list {
@@ -345,6 +351,10 @@ p {
 
 .mobile-header .mobile-header__menu.is-open .mobile-header__contarine .mobile-social__link {
   color: #2196f3;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 .page-header {
@@ -507,6 +517,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 100;
   width: 300px;
   min-height: 581px;
   background-color: #ffffff;
@@ -546,6 +557,7 @@ p {
   position: absolute;
   top: 8px;
   right: 8px;
+  z-index: 200;
   display: inline-flex;
   align-items: center;
   justify-content: center;

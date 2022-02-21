@@ -4,7 +4,7 @@
 }
 .mobile-header {
   &__contarine {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     transform: translateY(-100%);
@@ -43,7 +43,8 @@
     transform: translateY(0%);
     padding: 48px 40px;
     .mobile-header__nav {
-      margin-bottom: 302px;
+      min-height: 600px;
+      height: 100vh;
     }
     .mobile-header__link {
       font-size: 40px;
@@ -59,6 +60,10 @@
     }
     .mobile-header__item:not(:last-child) {
       margin-bottom: 32px;
+    }
+    .mobile-contact {
+      position: absolute;
+      bottom: 150px;
     }
     .mobile-contact__list {
       margin-bottom: 64px;
@@ -88,4 +93,7 @@
       }
     }
   }
+}
+.overflow {
+  overflow: hidden;
 }

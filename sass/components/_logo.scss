@@ -6,7 +6,9 @@
   font-weight: 700;
   line-height: 1.19;
   text-decoration: none;
-  padding: 15px 0;
+  @include less-tab {
+    padding: 15px 0;
+  }
   &--header {
     color: #000000;
   }

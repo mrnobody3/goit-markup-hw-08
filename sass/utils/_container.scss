@@ -41,6 +41,8 @@
 .container--footer {
   @include tab {
     display: flex;
+  }
+  @include less-desk {
     justify-content: center;
     flex-wrap: wrap;
   }

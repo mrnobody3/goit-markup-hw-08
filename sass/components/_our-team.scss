@@ -4,6 +4,7 @@
   @include tab {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
   &__name {
     font-weight: 500;
